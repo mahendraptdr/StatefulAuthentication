@@ -46,7 +46,7 @@ public class Myfilter implements Filter {
                 }
                 }
             }
-            if (sessionid == true && request.getRequestURI().equals("/login") || request.getrequestURI().equals("/")||request.getRequestURI().equals("/veryfication"))
+            if (sessionid == true && request.getRequestURI().equals("/login") || request.getRequestURI().equals("/")||request.getRequestURI().equals("/veryfication"))
             {
                 response.sendRedirect(request.getContextPath()+"/home");
                 return;
