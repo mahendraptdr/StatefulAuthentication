@@ -39,11 +39,10 @@ public class LoginService {
          Cookie cookie = new Cookie("token", sessionToken);
          cookie.setAttribute("usergmail",login.getGmail());
          cookie.setPath("/");
-         cookie.setDomain("localhost");
+         cookie.setDomain("railway.app");
          cookie.setMaxAge(60*60);
          cookie.setHttpOnly(true);
          response.addCookie(cookie);
-         System.out.println( cookie.getAttribute("usergmail"));
 
      }
 
